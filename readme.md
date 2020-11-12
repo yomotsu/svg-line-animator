@@ -1,5 +1,7 @@
 # svg-line-animator
 
+[![Latest NPM release](https://img.shields.io/npm/v/svg-line-animator.svg)](https://www.npmjs.com/package/svg-line-animator)
+
 svg-line-animator is a SVG line animation lib.
 Easy to make a timeline set with async/await.
 
@@ -23,7 +25,7 @@ import SVGLineAnimator from 'svg-line-animator';
 
 	const lineAnimator1 = new SVGLineAnimator( $line1, 2000, SVGLineAnimator.EASE.sineOut );
 	const lineAnimator2 = new SVGLineAnimator( $line2, 2000, SVGLineAnimator.EASE.exponentialOut );
-	const lineAnimator3 = new SVGLineAnimator( $line3, 2000, easeOutBack );
+	const lineAnimator3 = new SVGLineAnimator( $line3, 2000, easeOutBack ); // you can also use custom easing
 
 	await lineAnimator1.play();
 	await lineAnimator2.play(); // wait for anim1 end, then start anim2
@@ -33,8 +35,6 @@ import SVGLineAnimator from 'svg-line-animator';
 
 } )();
 ```
-
-[![Latest NPM release](https://img.shields.io/npm/v/svg-line-animator.svg)](https://www.npmjs.com/package/svg-line-animator)
 
 ## examples
 
